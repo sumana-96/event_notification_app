@@ -1,10 +1,11 @@
-# event_notification_app
+![image](https://github.com/sumana-96/event_notification_app/assets/100777469/1ae2d85c-db77-4a41-a722-6ef7d0d82a52)# event_notification_app
 a simple web-based application using Ruby on Rails (RoR) that integrates with the iterable.com API.
 # README
-Clone the app from git
-Go to the project folder
-do 'bundle install'
-start the rails server
+How to setup
+  1. Clone the app from git
+  2. Go to the project folder
+  3. do 'bundle install'
+  4. start the rails server
 
 Things to cover:
 
@@ -104,4 +105,9 @@ This HTML code provides a basic login form using Devise, along with buttons for 
    - These buttons are not part of the login form but can be included on the same page for additional functionality.
    - They can trigger JavaScript functions or make AJAX requests to the server to perform actions related to Event A and Event B.
 
-Overall, this code provides a clean and simple login form using Devise, along with links for password recovery and user registration. Additionally, it can be extended to include functionality for triggering Event A and Event B actions.
+Overall, this code provides a clean and simple login form using Devise, along with links for password recovery and user registration. Additionally, it can be extended to 
+
+include functionality for triggering Event A and Event B actions.
+
+
+
