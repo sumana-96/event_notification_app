@@ -1,5 +1,3 @@
-require 'httparty'
-
 class EventsController < ApplicationController
   before_action :authenticate_user!
   include IterableApiInterface::Events
