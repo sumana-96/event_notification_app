@@ -1,4 +1,10 @@
 ![image](https://github.com/sumana-96/event_notification_app/assets/100777469/1ae2d85c-db77-4a41-a722-6ef7d0d82a52)# event_notification_app
+
+![image](https://github.com/sumana-96/event_notification_app/assets/100777469/4f17a654-f607-4494-9d26-eeaec9441c62)
+
+![image](https://github.com/sumana-96/event_notification_app/assets/100777469/ef862650-7f1f-4e9a-b83b-eb43b8abde43)
+
+
 a simple web-based application using Ruby on Rails (RoR) that integrates with the iterable.com API.
 # README
 How to setup
