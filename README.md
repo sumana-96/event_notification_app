@@ -12,6 +12,7 @@ How to setup
   2. Go to the project folder
   3. do 'bundle install'
   4. start the rails server
+  5. run http://localhost:3000/ in browser
 
 Things to cover:
 
