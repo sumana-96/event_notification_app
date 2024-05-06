@@ -1,1 +1,1 @@
-require Rails.root.join('app', 'services', 'factory.rb')
+require Rails.root.join('app', 'services', 'api_mocker.rb')

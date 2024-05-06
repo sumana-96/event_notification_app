@@ -1,4 +1,106 @@
-<h1>Home#index</h1>
-<%= render 'events/create_event_a' %>
-<%= render 'events/create_event_b' %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .events {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .event {
+      width: 48%;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .event h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .event form {
+      margin-top: 10px;
+    }
+
+    .event .field {
+      margin-bottom: 10px;
+    }
+
+    .event .field label {
+      font-weight: bold;
+    }
+
+    .event .field input[type="text"],
+    .event .field input[type="email"],
+    .event .field input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .event .field textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .event .field input[type="submit"] {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .event .field input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Event trigger System
+    </h1>
+    <div class="events">
+      <div class="event">
+        <%= render 'events/create_event_a' %>
+      </div>
+      <div class="event">
+        <%= render 'events/create_event_b' %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

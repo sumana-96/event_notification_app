@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>EventNotification</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>EventNotification</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  <body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    .notice, .alert {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .notice {
+      background-color: #d4edda;
+      color: #155724;
+      border-color: #c3e6cb;
+    }
+
+    .alert {
+      background-color: #f8d7da;
+      color: #721c24;
+      border-color: #f5c6cb;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #007bff;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <% if user_signed_in? %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "link" %>
     <% else %>
-      <%= link_to "Login", new_user_session_path %>
+      <%= link_to "Login", new_user_session_path, class: "link" %>
     <% end %>
 
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
