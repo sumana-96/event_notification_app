@@ -1,11 +1,12 @@
 # event_notification_app
 a simple web-based application using Ruby on Rails (RoR) that integrates with the iterable.com API.
 # README
+Clone the app from git
+Go to the project folder
+do 'bundle install'
+start the rails server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Things to cover:
 
 Module: APIMocker
 
